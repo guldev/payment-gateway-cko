@@ -9,6 +9,7 @@ namespace PaymentGateway.Core.Constants
         public static readonly string SUCCESS = "SUCCESS";
 
         public static readonly string SERVER_ERROR = "SERVER_ERROR";
+        public static readonly string UNAUTHORISED = "UNAUTHORISED";
 
         #region Entities Not Found Codes
 
@@ -33,6 +34,9 @@ namespace PaymentGateway.Core.Constants
 
         //Invalid payment amount provided
         public static readonly string INVALID_AMNT = "INVALID_AMNT";
+
+        //Invalid currency
+        public static readonly string INVALID_CURRENCY = "INVALID_CURRENCY";
 
         #endregion
 

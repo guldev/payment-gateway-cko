@@ -15,6 +15,6 @@ namespace PaymentGateway.Core.Entities
         public string Currency { get; set; }
         public decimal Amount { get; set; }
         public string BankUniqueIdentifier { get; set; }
-        public string StatusCode { get; set; }
+        public string GatewayResponseCode { get; set; }
     }
 }

@@ -64,7 +64,7 @@ namespace PaymentGateway.Data.Repositories
         public async Task<IEnumerable<Transaction>> GetApprovedTransactionBySession(int sessionID)
         {
             var transactions = await _gatewayContext.Transactions
-                                    .Where(x => x.SessionID == sessionID && x.StatusCode == BankResponseCode.APPROVED)
+                                    .Where(x => x.SessionID == sessionID && x.GatewayResponseCode == BankResponseCode.APPROVED)
                                     .ToListAsync();
 
             return transactions;

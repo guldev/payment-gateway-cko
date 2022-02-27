@@ -9,6 +9,6 @@ namespace PaymentGateway.Services.Authentication
 {
     public interface IAuthenticationService
     {
-        public Task<AuthenticationReponseModel> Authenticate(int merchandId, string secretKey);
+        public Task<AuthenticationReponseModel> Authenticate(string merchantName, string secretKey);
     }
 }

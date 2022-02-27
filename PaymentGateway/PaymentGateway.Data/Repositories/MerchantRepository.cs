@@ -35,5 +35,16 @@ namespace PaymentGateway.Data.Repositories
 
             return merchant;
         }
+
+        public async Task<Merchant> GetByNameSecret(string merchantName, string secretKey)
+        {
+            var merchant = await _context.Merchants
+                              .FirstOrDefaultAsync
+                              (x => x.Name == merchantName && x.SecretKey == secretKey && x.IsActive && !x.IsDeleted);
+
+            if (merchant == null) throw new UnauthorisedException();
+
+            return merchant;
+        }
     }
 }

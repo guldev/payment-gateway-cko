@@ -31,16 +31,16 @@ namespace PaymentGateway.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Authenticate([FromBody] AuthenticateRequestModel request)
         {
-            _loggerService.LogInfo($"Authentication attempt for merchantID {request.MerchantId}");
+            _loggerService.LogInfo($"Authentication attempt for merchantID {request.MerchantName}");
 
-            var response = await _authenticationService.Authenticate(request.MerchantId, request.SecretKey);
+            var response = await _authenticationService.Authenticate(request.MerchantName, request.SecretKey);
 
             if(response == null)
-                _loggerService.LogInfo($"Authentication failure for merchantID {request.MerchantId}");
+                _loggerService.LogInfo($"Authentication failure for merchantID {request.MerchantName}");
             else
             {
-                _loggerService.LogInfo($"Authentication success for merchantID {request.MerchantId}");
-                _loggerService.LogInfo($"Creating access token for merchantID {request.MerchantId}");
+                _loggerService.LogInfo($"Authentication success for merchantID {request.MerchantName}");
+                _loggerService.LogInfo($"Creating access token for merchantID {request.MerchantName}");
                 
                 string accessToken = _tokenService.CreateAccessToken();
                 response.Token = accessToken;

@@ -17,13 +17,13 @@ namespace PaymentGateway.Services.Authentication
             _merchantRepository = merchantRepository;
         }
 
-        public async Task<AuthenticationReponseModel> Authenticate(int merchantId, string secretKey)
+        public async Task<AuthenticationReponseModel> Authenticate(string merchantName, string secretKey)
         {
-            var merchant = await _merchantRepository.GetByID(merchantId, secretKey);
+            var merchant = await _merchantRepository.GetByNameSecret(merchantName, secretKey);
 
             if (merchant == null) return null;
 
-            return new AuthenticationReponseModel() { MerchantId = merchantId, Token = "" };
+            return new AuthenticationReponseModel() { MerchantId = merchant.ID, Token = "" };
         }
     }
 }

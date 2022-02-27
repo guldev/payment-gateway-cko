@@ -40,7 +40,7 @@ namespace PaymentGateway.API.Controllers
 
             var session = await _sessionService.Create(request);
 
-            if(session.Status == BasicStatusCode.SUCCESS)
+            if(session.GatewayResponseCode == BasicStatusCode.SUCCESS)
                 _loggerService.LogInfo($"Payment session creation success for merchantID {request.MerchantId}");
             else
                 _loggerService.LogInfo($"Payment session creation failure for merchantID {request.MerchantId}");
@@ -55,7 +55,7 @@ namespace PaymentGateway.API.Controllers
 
             var response = await _transactionService.CreatePaymentTransaction(request, merchantId, sessionId);
 
-            _loggerService.LogInfo($"Payment request response for merchantID {merchantId} with sessionID {sessionId} : {response.Status}");
+            _loggerService.LogInfo($"Payment request response for merchantID {merchantId} with sessionID {sessionId} : {response.GatewayResponseCode}");
 
             return Ok(response);
         }

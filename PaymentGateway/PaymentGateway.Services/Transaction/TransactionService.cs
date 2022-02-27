@@ -65,7 +65,7 @@ namespace PaymentGateway.Services
 
             //transaction is then updated with the response received from the bank
             transaction.BankUniqueIdentifier = response.TransactionId;
-            transaction.StatusCode = response.Status;
+            transaction.GatewayResponseCode = response.Status;
             await _transactionRepository.SaveChanges();
 
             return new CreateTransactionResponseModel(transaction);

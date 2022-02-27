@@ -10,7 +10,7 @@ namespace PaymentGateway.Core.Models
     {
         public int MerchantId { get; set; }
         public int SessionID { get; set; }
-        public string Status { get; set; }
+        public string GatewayResponseCode { get; set; }
 
         public CreateSessionResponseModel()
         {
@@ -21,7 +21,7 @@ namespace PaymentGateway.Core.Models
         {
             MerchantId = session.MerchantID;
             SessionID = session.ID;
-            Status = BasicStatusCode.SUCCESS;
+            GatewayResponseCode = BasicStatusCode.SUCCESS;
         }
     }
 }

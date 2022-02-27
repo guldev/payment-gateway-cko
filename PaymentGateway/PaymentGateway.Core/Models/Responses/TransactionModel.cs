@@ -15,6 +15,7 @@ namespace PaymentGateway.Core.Models
         public decimal Amount { get; set; }
         public string Currency { get; set; }
         public string TransactionDatetime { get; set; }
+        public string GatewayResponseCode { get; set; }
 
         public TransactionModel()
         {
@@ -31,6 +32,7 @@ namespace PaymentGateway.Core.Models
             Amount = transaction.Amount;
             Currency = transaction.Currency;
             TransactionDatetime = transaction.CreatedDate.ToString("dd-MM-yyyy HH:mm:ss");
+            GatewayResponseCode = transaction.GatewayResponseCode;
         }
     }
 }

@@ -19,7 +19,7 @@ namespace PaymentGateway.API.Services
                 issuer: "http://localhost:5000",
                 audience: "http://localhost:5000",
                 claims: new List<Claim>(),
-                expires: DateTime.Now.AddMinutes(5),
+                expires: DateTime.Now.AddMinutes(15),
                 signingCredentials: signinCredentials
             );
 

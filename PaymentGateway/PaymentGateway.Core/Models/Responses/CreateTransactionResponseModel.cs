@@ -9,7 +9,7 @@ namespace PaymentGateway.Core.Models
     {
         public string BankUniqueIdentifier { get; set; }
         public int TransactionId { get; set; }
-        public string Status { get; set; }
+        public string GatewayResponseCode { get; set; }
 
         public CreateTransactionResponseModel()
         {
@@ -18,14 +18,14 @@ namespace PaymentGateway.Core.Models
 
         public CreateTransactionResponseModel(string status)
         {
-            Status = status;
+            GatewayResponseCode = status;
         }
 
         public CreateTransactionResponseModel(Transaction transaction)
         {
             BankUniqueIdentifier = transaction.BankUniqueIdentifier;
             TransactionId = transaction.ID;
-            Status = transaction.StatusCode;
+            GatewayResponseCode = transaction.GatewayResponseCode;
         }
     }
 }

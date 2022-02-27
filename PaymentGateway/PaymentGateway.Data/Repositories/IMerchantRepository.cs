@@ -8,5 +8,6 @@ namespace PaymentGateway.Data.Repositories
     {
         public Task<Merchant> GetByID(int merchantID);
         public Task<Merchant> GetByID(int merchantID, string secretKey);
+        public Task<Merchant> GetByNameSecret(string merchantName, string secretKey);
     }
 }

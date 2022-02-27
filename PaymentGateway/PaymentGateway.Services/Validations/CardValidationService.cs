@@ -27,6 +27,9 @@ namespace PaymentGateway.Services
             if (!ExpiryDateCheck(expiry))
                 return new ValidationResult(false, GatewayResponseCode.EXPIRED_CARD);
 
+            if (!CurrencyCheck(currency))
+                return new ValidationResult(false, GatewayResponseCode.INVALID_CURRENCY);
+
             return new ValidationResult(true, GatewayResponseCode.SUCCESS);
         }
 
@@ -41,25 +44,30 @@ namespace PaymentGateway.Services
 
             return cvvCheck.IsMatch(cvv);
         }
+        
+        public bool CurrencyCheck(string currency)
+        {
+            return currency.Length == 3 && Regex.IsMatch(currency, @"^[a-zA-Z]+$");
+        }
 
         public bool ExpiryDateFormatCheck(string expiryDate)
         {
             var monthCheck = new Regex(@"^(0[1-9]|1[0-2])$");
             var yearCheck = new Regex(@"^20[0-9]{2}$");
 
-            var dateParts = expiryDate.Split('/'); //expiry date in from MM/yyyy            
-            if (!monthCheck.IsMatch(dateParts[0]) || !yearCheck.IsMatch(dateParts[1])) // <3 - 6>
-                return false; // ^ check date format is valid as "MM/yyyy"
+            var dateParts = expiryDate.Split('/'); 
+            if (!monthCheck.IsMatch(dateParts[0]) || !yearCheck.IsMatch(dateParts[1])) 
+                return false; 
 
             return true;
         }
 
         public bool ExpiryDateCheck(string expiryDate)
         {
-            var dateParts = expiryDate.Split('/'); //expiry date in from MM/yyyy
+            var dateParts = expiryDate.Split('/'); 
             var year = int.Parse(dateParts[1]);
             var month = int.Parse(dateParts[0]);
-            var lastDateOfExpiryMonth = DateTime.DaysInMonth(year, month); //get actual expiry date
+            var lastDateOfExpiryMonth = DateTime.DaysInMonth(year, month); 
             var cardExpiry = new DateTime(year, month, lastDateOfExpiryMonth, 23, 59, 59);
 
             //check expiry greater than today & within next 6 years <7, 8>>
