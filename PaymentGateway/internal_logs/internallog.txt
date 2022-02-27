@@ -1,0 +1,704 @@
+2022-02-27 11:26:55.7555 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-02-27 11:26:56.5243 Debug Found assembly location directory: 'C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2022-02-27 11:26:56.5243 Debug Auto loading based on NLog-Assembly found location: C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0
+2022-02-27 11:26:56.5243 Debug Search for auto loading files in location: C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0
+2022-02-27 11:26:56.5430 Debug Start auto loading, location: C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0
+2022-02-27 11:26:56.5430 Info Auto loading assembly file: C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+2022-02-27 11:26:56.5430 Info Loading assembly file: C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+2022-02-27 11:26:56.6994 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.7.4.1610. Product version: 1.7.4+e2bffa9e949fb4760d75aca224e78631c063f087. GlobalAssemblyCache: False
+2022-02-27 11:26:56.7403 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-02-27 11:26:56.7804 Info Auto loading assembly file: C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0\NLog.Extensions.Logging.dll succeeded!
+2022-02-27 11:26:56.7928 Trace Assembly 'Microsoft.Extensions.Logging, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2022-02-27 11:26:56.7928 Trace Assembly 'Microsoft.Extensions.Logging.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2022-02-27 11:26:56.7928 Trace Assembly 'NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c' will be hidden in callsite stacktrace
+2022-02-27 11:26:56.8118 Debug Auto loading done
+2022-02-27 11:26:56.8118 Info Message Template Auto Format enabled
+2022-02-27 11:26:56.8341 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:26:56.8384 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-02-27 11:26:56.8633 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2022-02-27 11:26:56.8682 Trace Wrapping NLog.LayoutRenderers.LevelLayoutRenderer with NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper
+2022-02-27 11:26:56.8682 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:26:56.8682 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:26:56.8848 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:26:56.8848 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2022-02-27 11:26:56.9017 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2022-02-27 11:26:56.9153 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2022-02-27 11:26:56.9153 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:26:56.9307 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:26:56.9307 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:26:56.9307 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2022-02-27 11:26:56.9307 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:26:56.9460 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-02-27 11:26:56.9460 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-02-27 11:26:56.9662 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt'
+2022-02-27 11:26:56.9662 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:26:56.9791 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-02-27 11:26:56.9791 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-02-27 11:26:56.9791 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:26:56.9791 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-02-27 11:26:56.9791 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2022-02-27 11:26:56.9791 Trace Wrapping NLog.LayoutRenderers.LevelLayoutRenderer with NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper
+2022-02-27 11:26:56.9791 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:26:56.9791 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:26:56.9926 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:26:56.9926 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2022-02-27 11:26:56.9926 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2022-02-27 11:26:56.9926 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2022-02-27 11:26:56.9926 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:26:56.9926 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:26:56.9926 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:26:56.9926 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-02-27 11:26:56.9926 Info Adding target FileTarget(Name=logfile)
+2022-02-27 11:26:56.9926 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-02-27 11:26:56.9926 Trace ParseRulesElement
+2022-02-27 11:26:57.0335 Debug Watching path 'C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API' filter 'nlog.config' for changes.
+2022-02-27 11:26:57.0335 Debug --- NLog configuration dump ---
+2022-02-27 11:26:57.0335 Debug Targets:
+2022-02-27 11:26:57.0335 Debug File Target[logfile]
+2022-02-27 11:26:57.0391 Debug Rules:
+2022-02-27 11:26:57.0391 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]
+2022-02-27 11:26:57.0391 Debug --- End of NLog configuration dump ---
+2022-02-27 11:26:57.0391 Trace FindReachableObject<System.Object>:
+2022-02-27 11:26:57.0391 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]'
+2022-02-27 11:26:57.0391 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-02-27 11:26:57.0391 Trace  Scanning FileTarget 'File Target[logfile]'
+2022-02-27 11:26:57.0551 Trace   Scanning Property FileName ''C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt'' NLog.Layouts
+2022-02-27 11:26:57.0551 Trace   Scanning SimpleLayout ''C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt''
+2022-02-27 11:26:57.0551 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:26:57.0551 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:26:57.0551 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-02-27 11:26:57.0551 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:26:57.0551 Trace   Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2022-02-27 11:26:57.0551 Trace   Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2022-02-27 11:26:57.0551 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:26:57.0551 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-02-27 11:26:57.0711 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:26:57.0711 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2022-02-27 11:26:57.0711 Trace     Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2022-02-27 11:26:57.0711 Trace     Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2022-02-27 11:26:57.0711 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:26:57.0711 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:26:57.0867 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:26:57.0867 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-02-27 11:26:57.0867 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-02-27 11:26:57.0867 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-02-27 11:26:57.0867 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-02-27 11:26:57.1084 Info Validating config: TargetNames=logfile, ConfigItems=14, FilePath=C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API/nlog.config
+2022-02-27 11:26:57.1276 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-02-27 11:26:57.1771 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-02-27 11:26:57.1771 Trace Initializing Layout Renderer: ${message}
+2022-02-27 11:26:57.1771 Trace Initializing Layout Renderer: ${literal}
+2022-02-27 11:26:57.1771 Trace Initializing Layout Renderer: ${level}
+2022-02-27 11:26:57.1795 Trace Initializing SimpleLayout=Layout Renderer: ${level}
+2022-02-27 11:26:57.1795 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:26:57.1795 Trace Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2022-02-27 11:26:57.1795 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:26:57.1795 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:26:57.1795 Trace Initializing Layout Renderer: ${uppercase}
+2022-02-27 11:26:57.1795 Trace Initializing Layout Renderer: ${literal}
+2022-02-27 11:26:57.1795 Trace Initializing Layout Renderer: ${longdate}
+2022-02-27 11:26:57.1795 Trace Initializing '${longdate} ${level:uppercase=true} ${message}'
+2022-02-27 11:26:57.1795 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:26:57.2195 Trace Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2022-02-27 11:26:57.2195 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:26:57.2195 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-02-27 11:26:57.2291 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:26:57.2291 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2022-02-27 11:26:57.2291 Trace   Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2022-02-27 11:26:57.2291 Trace   Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2022-02-27 11:26:57.2291 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:26:57.2291 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:26:57.2291 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:26:57.2291 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-02-27 11:26:57.2437 Trace Initializing Layout Renderer: ${literal}
+2022-02-27 11:26:57.2437 Trace Initializing Layout Renderer: ${shortdate}
+2022-02-27 11:26:57.2437 Trace Initializing Layout Renderer: ${literal}
+2022-02-27 11:26:57.2590 Trace Initializing 'C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt'
+2022-02-27 11:26:57.2590 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:26:57.2590 Trace Scanning SimpleLayout ''C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt''
+2022-02-27 11:26:57.2767 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:26:57.2767 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:26:57.2767 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-02-27 11:26:57.2767 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:26:57.2904 Trace Initializing File Target[logfile]
+2022-02-27 11:26:57.2904 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-02-27 11:26:57.2904 Trace Scanning FileTarget 'File Target[logfile]'
+2022-02-27 11:26:57.2904 Trace  Scanning Property FileName ''C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt'' NLog.Layouts
+2022-02-27 11:26:57.2904 Trace  Scanning SimpleLayout ''C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt''
+2022-02-27 11:26:57.2904 Trace  Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2022-02-27 11:26:57.3067 Trace  Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2022-02-27 11:26:57.3067 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-02-27 11:26:57.3067 Trace File Target[logfile] has 2 layouts
+2022-02-27 11:26:57.3289 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
+2022-02-27 11:29:01.1235 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-02-27 11:29:01.2610 Debug Found assembly location directory: 'C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2022-02-27 11:29:01.2610 Debug Auto loading based on NLog-Assembly found location: C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0
+2022-02-27 11:29:01.2610 Debug Search for auto loading files in location: C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0
+2022-02-27 11:29:01.2758 Debug Start auto loading, location: C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0
+2022-02-27 11:29:01.2758 Info Auto loading assembly file: C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+2022-02-27 11:29:01.2758 Info Loading assembly file: C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+2022-02-27 11:29:01.3097 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.7.4.1610. Product version: 1.7.4+e2bffa9e949fb4760d75aca224e78631c063f087. GlobalAssemblyCache: False
+2022-02-27 11:29:01.3097 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-02-27 11:29:01.3097 Info Auto loading assembly file: C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0\NLog.Extensions.Logging.dll succeeded!
+2022-02-27 11:29:01.3097 Trace Assembly 'Microsoft.Extensions.Logging, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2022-02-27 11:29:01.3097 Trace Assembly 'Microsoft.Extensions.Logging.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2022-02-27 11:29:01.3097 Trace Assembly 'NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c' will be hidden in callsite stacktrace
+2022-02-27 11:29:01.3097 Debug Auto loading done
+2022-02-27 11:29:01.3201 Info Message Template Auto Format enabled
+2022-02-27 11:29:01.3201 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:29:01.3392 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-02-27 11:29:01.3392 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2022-02-27 11:29:01.3392 Trace Wrapping NLog.LayoutRenderers.LevelLayoutRenderer with NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper
+2022-02-27 11:29:01.3392 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:29:01.3392 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:29:01.3528 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:29:01.3528 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2022-02-27 11:29:01.3528 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2022-02-27 11:29:01.3528 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2022-02-27 11:29:01.3528 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:29:01.3528 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:29:01.3528 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:29:01.3528 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2022-02-27 11:29:01.3528 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:29:01.3672 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-02-27 11:29:01.3672 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-02-27 11:29:01.3672 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt'
+2022-02-27 11:29:01.3672 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:29:01.3672 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-02-27 11:29:01.3835 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-02-27 11:29:01.3835 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:29:01.3835 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-02-27 11:29:01.3835 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2022-02-27 11:29:01.3835 Trace Wrapping NLog.LayoutRenderers.LevelLayoutRenderer with NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper
+2022-02-27 11:29:01.3835 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:29:01.3835 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:29:01.3835 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:29:01.3835 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2022-02-27 11:29:01.3835 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2022-02-27 11:29:01.3835 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2022-02-27 11:29:01.3835 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:29:01.3835 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:29:01.3835 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:29:01.3835 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-02-27 11:29:01.3990 Info Adding target FileTarget(Name=logfile)
+2022-02-27 11:29:01.3990 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-02-27 11:29:01.3990 Trace ParseRulesElement
+2022-02-27 11:29:01.4222 Debug Watching path 'C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API' filter 'nlog.config' for changes.
+2022-02-27 11:29:01.4222 Debug --- NLog configuration dump ---
+2022-02-27 11:29:01.4222 Debug Targets:
+2022-02-27 11:29:01.4222 Debug File Target[logfile]
+2022-02-27 11:29:01.4222 Debug Rules:
+2022-02-27 11:29:01.4314 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]
+2022-02-27 11:29:01.4314 Debug --- End of NLog configuration dump ---
+2022-02-27 11:29:01.4314 Trace FindReachableObject<System.Object>:
+2022-02-27 11:29:01.4314 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]'
+2022-02-27 11:29:01.4314 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-02-27 11:29:01.4314 Trace  Scanning FileTarget 'File Target[logfile]'
+2022-02-27 11:29:01.4314 Trace   Scanning Property FileName ''C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt'' NLog.Layouts
+2022-02-27 11:29:01.4314 Trace   Scanning SimpleLayout ''C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt''
+2022-02-27 11:29:01.4314 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:29:01.4314 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:29:01.4467 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-02-27 11:29:01.4467 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:29:01.4467 Trace   Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2022-02-27 11:29:01.4467 Trace   Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2022-02-27 11:29:01.4467 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:29:01.4467 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-02-27 11:29:01.4467 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:29:01.4467 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2022-02-27 11:29:01.4467 Trace     Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2022-02-27 11:29:01.4467 Trace     Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2022-02-27 11:29:01.4612 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:29:01.4612 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:29:01.4612 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:29:01.4612 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-02-27 11:29:01.4612 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-02-27 11:29:01.4778 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-02-27 11:29:01.4778 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-02-27 11:29:01.4778 Info Validating config: TargetNames=logfile, ConfigItems=14, FilePath=C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API/nlog.config
+2022-02-27 11:29:01.4778 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-02-27 11:29:01.4778 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-02-27 11:29:01.4940 Trace Initializing Layout Renderer: ${message}
+2022-02-27 11:29:01.4940 Trace Initializing Layout Renderer: ${literal}
+2022-02-27 11:29:01.4940 Trace Initializing Layout Renderer: ${level}
+2022-02-27 11:29:01.4940 Trace Initializing SimpleLayout=Layout Renderer: ${level}
+2022-02-27 11:29:01.4940 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:29:01.4940 Trace Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2022-02-27 11:29:01.4940 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:29:01.4940 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:29:01.5078 Trace Initializing Layout Renderer: ${uppercase}
+2022-02-27 11:29:01.5078 Trace Initializing Layout Renderer: ${literal}
+2022-02-27 11:29:01.5078 Trace Initializing Layout Renderer: ${longdate}
+2022-02-27 11:29:01.5078 Trace Initializing '${longdate} ${level:uppercase=true} ${message}'
+2022-02-27 11:29:01.5078 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:29:01.5078 Trace Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2022-02-27 11:29:01.5078 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:29:01.5078 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-02-27 11:29:01.5078 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:29:01.5078 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2022-02-27 11:29:01.5078 Trace   Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2022-02-27 11:29:01.5078 Trace   Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2022-02-27 11:29:01.5078 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:29:01.5078 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:29:01.5078 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:29:01.5078 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-02-27 11:29:01.5078 Trace Initializing Layout Renderer: ${literal}
+2022-02-27 11:29:01.5078 Trace Initializing Layout Renderer: ${shortdate}
+2022-02-27 11:29:01.5078 Trace Initializing Layout Renderer: ${literal}
+2022-02-27 11:29:01.5078 Trace Initializing 'C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt'
+2022-02-27 11:29:01.5078 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:29:01.5237 Trace Scanning SimpleLayout ''C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt''
+2022-02-27 11:29:01.5237 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:29:01.5237 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:29:01.5237 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-02-27 11:29:01.5237 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:29:01.5237 Trace Initializing File Target[logfile]
+2022-02-27 11:29:01.5237 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-02-27 11:29:01.5237 Trace Scanning FileTarget 'File Target[logfile]'
+2022-02-27 11:29:01.5237 Trace  Scanning Property FileName ''C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt'' NLog.Layouts
+2022-02-27 11:29:01.5237 Trace  Scanning SimpleLayout ''C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt''
+2022-02-27 11:29:01.5237 Trace  Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2022-02-27 11:29:01.5237 Trace  Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2022-02-27 11:29:01.5237 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-02-27 11:29:01.5237 Trace File Target[logfile] has 2 layouts
+2022-02-27 11:29:01.5237 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
+2022-02-27 11:29:22.1698 Debug Targets for PaymentGateway.Logging.LoggerService by level:
+2022-02-27 11:29:22.1698 Debug Trace =>
+2022-02-27 11:29:22.1698 Debug Debug => logfile
+2022-02-27 11:29:22.1698 Debug Info => logfile
+2022-02-27 11:29:22.1698 Debug Warn => logfile
+2022-02-27 11:29:22.1698 Debug Error => logfile
+2022-02-27 11:29:22.1698 Debug Fatal => logfile
+2022-02-27 11:29:22.2069 Debug FileTarget(Name=logfile): Preparing for new file 'C:\Users\gulsh\source\repos\PaymentGateway\logs\2022-02-27_logfile.txt'
+2022-02-27 11:29:22.2221 Debug Creating file appender: C:\Users\gulsh\source\repos\PaymentGateway\logs\2022-02-27_logfile.txt
+2022-02-27 11:29:22.2221 Trace Opening C:\Users\gulsh\source\repos\PaymentGateway\logs\2022-02-27_logfile.txt with allowFileSharedWriting=False
+2022-02-27 11:29:23.1374 Trace Opening C:\Users\gulsh\source\repos\PaymentGateway\logs\2022-02-27_logfile.txt with allowFileSharedWriting=False
+2022-02-27 11:48:10.3878 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-02-27 11:48:11.1095 Debug Found assembly location directory: 'C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2022-02-27 11:48:11.1095 Debug Auto loading based on NLog-Assembly found location: C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0
+2022-02-27 11:48:11.1095 Debug Search for auto loading files in location: C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0
+2022-02-27 11:48:11.1180 Debug Start auto loading, location: C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0
+2022-02-27 11:48:11.1180 Info Auto loading assembly file: C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+2022-02-27 11:48:11.1180 Info Loading assembly file: C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+2022-02-27 11:48:11.1728 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.7.4.1610. Product version: 1.7.4+e2bffa9e949fb4760d75aca224e78631c063f087. GlobalAssemblyCache: False
+2022-02-27 11:48:11.1728 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-02-27 11:48:11.1728 Info Auto loading assembly file: C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0\NLog.Extensions.Logging.dll succeeded!
+2022-02-27 11:48:11.1728 Trace Assembly 'Microsoft.Extensions.Logging, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2022-02-27 11:48:11.1728 Trace Assembly 'Microsoft.Extensions.Logging.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2022-02-27 11:48:11.1805 Trace Assembly 'NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c' will be hidden in callsite stacktrace
+2022-02-27 11:48:11.1805 Debug Auto loading done
+2022-02-27 11:48:11.1805 Info Message Template Auto Format enabled
+2022-02-27 11:48:11.2029 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:48:11.2029 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-02-27 11:48:11.2126 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2022-02-27 11:48:11.2126 Trace Wrapping NLog.LayoutRenderers.LevelLayoutRenderer with NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper
+2022-02-27 11:48:11.2126 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:48:11.2126 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:48:11.2126 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:48:11.2126 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2022-02-27 11:48:11.2126 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2022-02-27 11:48:11.2126 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2022-02-27 11:48:11.2126 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:48:11.2126 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:48:11.2126 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:48:11.2272 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2022-02-27 11:48:11.2272 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:48:11.2272 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-02-27 11:48:11.2272 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-02-27 11:48:11.2272 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt'
+2022-02-27 11:48:11.2272 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:48:11.2272 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-02-27 11:48:11.2436 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-02-27 11:48:11.2436 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:48:11.2436 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-02-27 11:48:11.2436 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2022-02-27 11:48:11.2436 Trace Wrapping NLog.LayoutRenderers.LevelLayoutRenderer with NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper
+2022-02-27 11:48:11.2436 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:48:11.2436 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:48:11.2436 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:48:11.2436 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2022-02-27 11:48:11.2575 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2022-02-27 11:48:11.2575 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2022-02-27 11:48:11.2575 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:48:11.2575 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:48:11.2575 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:48:11.2575 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-02-27 11:48:11.2575 Info Adding target FileTarget(Name=logfile)
+2022-02-27 11:48:11.2746 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-02-27 11:48:11.2746 Trace ParseRulesElement
+2022-02-27 11:48:11.3010 Debug Watching path 'C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API' filter 'nlog.config' for changes.
+2022-02-27 11:48:11.3010 Debug --- NLog configuration dump ---
+2022-02-27 11:48:11.3010 Debug Targets:
+2022-02-27 11:48:11.3010 Debug File Target[logfile]
+2022-02-27 11:48:11.3044 Debug Rules:
+2022-02-27 11:48:11.3044 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]
+2022-02-27 11:48:11.3044 Debug --- End of NLog configuration dump ---
+2022-02-27 11:48:11.3044 Trace FindReachableObject<System.Object>:
+2022-02-27 11:48:11.3044 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]'
+2022-02-27 11:48:11.3044 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-02-27 11:48:11.3044 Trace  Scanning FileTarget 'File Target[logfile]'
+2022-02-27 11:48:11.3044 Trace   Scanning Property FileName ''C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt'' NLog.Layouts
+2022-02-27 11:48:11.3044 Trace   Scanning SimpleLayout ''C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt''
+2022-02-27 11:48:11.3044 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:48:11.3044 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:48:11.3044 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-02-27 11:48:11.3044 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:48:11.3044 Trace   Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2022-02-27 11:48:11.3044 Trace   Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2022-02-27 11:48:11.3044 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:48:11.3044 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-02-27 11:48:11.3044 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:48:11.3044 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2022-02-27 11:48:11.3044 Trace     Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2022-02-27 11:48:11.3044 Trace     Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2022-02-27 11:48:11.3044 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:48:11.3210 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:48:11.3210 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:48:11.3210 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-02-27 11:48:11.3210 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-02-27 11:48:11.3210 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-02-27 11:48:11.3210 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-02-27 11:48:11.3210 Info Validating config: TargetNames=logfile, ConfigItems=14, FilePath=C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API/nlog.config
+2022-02-27 11:48:11.3210 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-02-27 11:48:11.3415 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-02-27 11:48:11.3415 Trace Initializing Layout Renderer: ${message}
+2022-02-27 11:48:11.3415 Trace Initializing Layout Renderer: ${literal}
+2022-02-27 11:48:11.3415 Trace Initializing Layout Renderer: ${level}
+2022-02-27 11:48:11.3415 Trace Initializing SimpleLayout=Layout Renderer: ${level}
+2022-02-27 11:48:11.3518 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:48:11.3518 Trace Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2022-02-27 11:48:11.3518 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:48:11.3518 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:48:11.3518 Trace Initializing Layout Renderer: ${uppercase}
+2022-02-27 11:48:11.3518 Trace Initializing Layout Renderer: ${literal}
+2022-02-27 11:48:11.3518 Trace Initializing Layout Renderer: ${longdate}
+2022-02-27 11:48:11.3678 Trace Initializing '${longdate} ${level:uppercase=true} ${message}'
+2022-02-27 11:48:11.3678 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:48:11.3678 Trace Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2022-02-27 11:48:11.3678 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:48:11.3678 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-02-27 11:48:11.3678 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:48:11.3678 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2022-02-27 11:48:11.3678 Trace   Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2022-02-27 11:48:11.3678 Trace   Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2022-02-27 11:48:11.3678 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:48:11.3840 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:48:11.3982 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:48:11.3982 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-02-27 11:48:11.3982 Trace Initializing Layout Renderer: ${literal}
+2022-02-27 11:48:11.3982 Trace Initializing Layout Renderer: ${shortdate}
+2022-02-27 11:48:11.3982 Trace Initializing Layout Renderer: ${literal}
+2022-02-27 11:48:11.3982 Trace Initializing 'C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt'
+2022-02-27 11:48:11.4258 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:48:11.4258 Trace Scanning SimpleLayout ''C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt''
+2022-02-27 11:48:11.4258 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:48:11.4301 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:48:11.4301 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-02-27 11:48:11.4301 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:48:11.4301 Trace Initializing File Target[logfile]
+2022-02-27 11:48:11.4301 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-02-27 11:48:11.4301 Trace Scanning FileTarget 'File Target[logfile]'
+2022-02-27 11:48:11.4301 Trace  Scanning Property FileName ''C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt'' NLog.Layouts
+2022-02-27 11:48:11.4301 Trace  Scanning SimpleLayout ''C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt''
+2022-02-27 11:48:11.4301 Trace  Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2022-02-27 11:48:11.4301 Trace  Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2022-02-27 11:48:11.4301 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-02-27 11:48:11.4301 Trace File Target[logfile] has 2 layouts
+2022-02-27 11:48:11.4458 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
+2022-02-27 11:49:59.0687 Debug Targets for PaymentGateway.Logging.LoggerService by level:
+2022-02-27 11:49:59.0687 Debug Trace =>
+2022-02-27 11:49:59.0704 Debug Debug => logfile
+2022-02-27 11:49:59.0704 Debug Info => logfile
+2022-02-27 11:49:59.0704 Debug Warn => logfile
+2022-02-27 11:49:59.0704 Debug Error => logfile
+2022-02-27 11:49:59.0704 Debug Fatal => logfile
+2022-02-27 11:49:59.1188 Debug FileTarget(Name=logfile): Preparing for new file 'C:\Users\gulsh\source\repos\PaymentGateway\logs\2022-02-27_logfile.txt'
+2022-02-27 11:49:59.1188 Debug Creating file appender: C:\Users\gulsh\source\repos\PaymentGateway\logs\2022-02-27_logfile.txt
+2022-02-27 11:49:59.1347 Trace Opening C:\Users\gulsh\source\repos\PaymentGateway\logs\2022-02-27_logfile.txt with allowFileSharedWriting=False
+2022-02-27 11:57:50.4616 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-02-27 11:57:50.8672 Debug Found assembly location directory: 'C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2022-02-27 11:57:50.8672 Debug Auto loading based on NLog-Assembly found location: C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0
+2022-02-27 11:57:50.8672 Debug Search for auto loading files in location: C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0
+2022-02-27 11:57:50.8672 Debug Start auto loading, location: C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0
+2022-02-27 11:57:50.8836 Info Auto loading assembly file: C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+2022-02-27 11:57:50.8836 Info Loading assembly file: C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+2022-02-27 11:57:50.9209 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.7.4.1610. Product version: 1.7.4+e2bffa9e949fb4760d75aca224e78631c063f087. GlobalAssemblyCache: False
+2022-02-27 11:57:50.9209 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-02-27 11:57:50.9209 Info Auto loading assembly file: C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0\NLog.Extensions.Logging.dll succeeded!
+2022-02-27 11:57:50.9209 Trace Assembly 'Microsoft.Extensions.Logging, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2022-02-27 11:57:50.9209 Trace Assembly 'Microsoft.Extensions.Logging.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2022-02-27 11:57:50.9305 Trace Assembly 'NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c' will be hidden in callsite stacktrace
+2022-02-27 11:57:50.9305 Debug Auto loading done
+2022-02-27 11:57:50.9305 Info Message Template Auto Format enabled
+2022-02-27 11:57:50.9545 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:57:50.9545 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-02-27 11:57:50.9650 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2022-02-27 11:57:50.9650 Trace Wrapping NLog.LayoutRenderers.LevelLayoutRenderer with NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper
+2022-02-27 11:57:50.9650 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:57:51.0145 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:57:51.0866 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:57:51.0866 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2022-02-27 11:57:51.1052 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2022-02-27 11:57:51.1052 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2022-02-27 11:57:51.1052 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:57:51.1334 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:57:51.1334 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:57:51.1334 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2022-02-27 11:57:51.1334 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:57:51.1486 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-02-27 11:57:51.1486 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-02-27 11:57:51.1486 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt'
+2022-02-27 11:57:51.1486 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:57:51.1486 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-02-27 11:57:51.1486 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-02-27 11:57:51.1486 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:57:51.1486 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-02-27 11:57:51.1645 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2022-02-27 11:57:51.1645 Trace Wrapping NLog.LayoutRenderers.LevelLayoutRenderer with NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper
+2022-02-27 11:57:51.1645 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:57:51.1645 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:57:51.1645 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:57:51.1645 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2022-02-27 11:57:51.1645 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2022-02-27 11:57:51.1645 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2022-02-27 11:57:51.1645 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:57:51.1645 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:57:51.1645 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:57:51.1645 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-02-27 11:57:51.1645 Info Adding target FileTarget(Name=logfile)
+2022-02-27 11:57:51.1645 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-02-27 11:57:51.1803 Trace ParseRulesElement
+2022-02-27 11:57:51.2008 Debug Watching path 'C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API' filter 'nlog.config' for changes.
+2022-02-27 11:57:51.2008 Debug --- NLog configuration dump ---
+2022-02-27 11:57:51.2008 Debug Targets:
+2022-02-27 11:57:51.2008 Debug File Target[logfile]
+2022-02-27 11:57:51.2008 Debug Rules:
+2022-02-27 11:57:51.2132 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]
+2022-02-27 11:57:51.2132 Debug --- End of NLog configuration dump ---
+2022-02-27 11:57:51.2132 Trace FindReachableObject<System.Object>:
+2022-02-27 11:57:51.2132 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]'
+2022-02-27 11:57:51.2132 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-02-27 11:57:51.2132 Trace  Scanning FileTarget 'File Target[logfile]'
+2022-02-27 11:57:51.2132 Trace   Scanning Property FileName ''C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt'' NLog.Layouts
+2022-02-27 11:57:51.2279 Trace   Scanning SimpleLayout ''C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt''
+2022-02-27 11:57:51.2279 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:57:51.2279 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:57:51.2279 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-02-27 11:57:51.2279 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:57:51.2279 Trace   Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2022-02-27 11:57:51.2279 Trace   Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2022-02-27 11:57:51.2279 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:57:51.2279 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-02-27 11:57:51.2279 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:57:51.2423 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2022-02-27 11:57:51.2423 Trace     Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2022-02-27 11:57:51.2423 Trace     Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2022-02-27 11:57:51.2423 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:57:51.2423 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:57:51.2423 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:57:51.2423 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-02-27 11:57:51.2423 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-02-27 11:57:51.2587 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-02-27 11:57:51.2587 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-02-27 11:57:51.2587 Info Validating config: TargetNames=logfile, ConfigItems=14, FilePath=C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API/nlog.config
+2022-02-27 11:57:51.2587 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-02-27 11:57:51.2876 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-02-27 11:57:51.3016 Trace Initializing Layout Renderer: ${message}
+2022-02-27 11:57:51.3150 Trace Initializing Layout Renderer: ${literal}
+2022-02-27 11:57:51.3375 Trace Initializing Layout Renderer: ${level}
+2022-02-27 11:57:51.3375 Trace Initializing SimpleLayout=Layout Renderer: ${level}
+2022-02-27 11:57:51.3375 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:57:51.3375 Trace Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2022-02-27 11:57:51.3542 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:57:51.3542 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:57:51.3542 Trace Initializing Layout Renderer: ${uppercase}
+2022-02-27 11:57:51.3668 Trace Initializing Layout Renderer: ${literal}
+2022-02-27 11:57:51.3668 Trace Initializing Layout Renderer: ${longdate}
+2022-02-27 11:57:51.3668 Trace Initializing '${longdate} ${level:uppercase=true} ${message}'
+2022-02-27 11:57:51.3891 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:57:51.3891 Trace Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2022-02-27 11:57:51.4008 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:57:51.4008 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-02-27 11:57:51.4008 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:57:51.4008 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2022-02-27 11:57:51.4146 Trace   Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2022-02-27 11:57:51.4146 Trace   Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2022-02-27 11:57:51.4146 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:57:51.4146 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:57:51.4305 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:57:51.4305 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-02-27 11:57:51.4305 Trace Initializing Layout Renderer: ${literal}
+2022-02-27 11:57:51.4305 Trace Initializing Layout Renderer: ${shortdate}
+2022-02-27 11:57:51.4305 Trace Initializing Layout Renderer: ${literal}
+2022-02-27 11:57:51.4305 Trace Initializing 'C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt'
+2022-02-27 11:57:51.4305 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:57:51.4305 Trace Scanning SimpleLayout ''C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt''
+2022-02-27 11:57:51.4305 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:57:51.4305 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:57:51.4305 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-02-27 11:57:51.4305 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:57:51.4456 Trace Initializing File Target[logfile]
+2022-02-27 11:57:51.4456 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-02-27 11:57:51.4456 Trace Scanning FileTarget 'File Target[logfile]'
+2022-02-27 11:57:51.4456 Trace  Scanning Property FileName ''C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt'' NLog.Layouts
+2022-02-27 11:57:51.4456 Trace  Scanning SimpleLayout ''C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt''
+2022-02-27 11:57:51.4456 Trace  Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2022-02-27 11:57:51.4456 Trace  Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2022-02-27 11:57:51.4456 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-02-27 11:57:51.4456 Trace File Target[logfile] has 2 layouts
+2022-02-27 11:57:51.4456 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
+2022-02-27 11:58:24.0970 Debug Targets for PaymentGateway.Logging.LoggerService by level:
+2022-02-27 11:58:24.0970 Debug Trace =>
+2022-02-27 11:58:24.0970 Debug Debug => logfile
+2022-02-27 11:58:24.0970 Debug Info => logfile
+2022-02-27 11:58:24.0970 Debug Warn => logfile
+2022-02-27 11:58:24.0970 Debug Error => logfile
+2022-02-27 11:58:24.0970 Debug Fatal => logfile
+2022-02-27 11:58:24.1570 Debug FileTarget(Name=logfile): Preparing for new file 'C:\Users\gulsh\source\repos\PaymentGateway\logs\2022-02-27_logfile.txt'
+2022-02-27 11:58:24.1668 Debug Creating file appender: C:\Users\gulsh\source\repos\PaymentGateway\logs\2022-02-27_logfile.txt
+2022-02-27 11:58:24.1668 Trace Opening C:\Users\gulsh\source\repos\PaymentGateway\logs\2022-02-27_logfile.txt with allowFileSharedWriting=False
+2022-02-27 11:58:32.8936 Trace Opening C:\Users\gulsh\source\repos\PaymentGateway\logs\2022-02-27_logfile.txt with allowFileSharedWriting=False
+2022-02-27 11:59:46.7201 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-02-27 11:59:46.9699 Debug Found assembly location directory: 'C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2022-02-27 11:59:46.9699 Debug Auto loading based on NLog-Assembly found location: C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0
+2022-02-27 11:59:47.0103 Debug Search for auto loading files in location: C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0
+2022-02-27 11:59:47.0778 Debug Start auto loading, location: C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0
+2022-02-27 11:59:47.1201 Info Auto loading assembly file: C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+2022-02-27 11:59:47.1426 Info Loading assembly file: C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+2022-02-27 11:59:47.1969 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.7.4.1610. Product version: 1.7.4+e2bffa9e949fb4760d75aca224e78631c063f087. GlobalAssemblyCache: False
+2022-02-27 11:59:47.1969 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-02-27 11:59:47.1969 Info Auto loading assembly file: C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API\bin\Debug\net5.0\NLog.Extensions.Logging.dll succeeded!
+2022-02-27 11:59:47.1969 Trace Assembly 'Microsoft.Extensions.Logging, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2022-02-27 11:59:47.1969 Trace Assembly 'Microsoft.Extensions.Logging.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2022-02-27 11:59:47.1969 Trace Assembly 'NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c' will be hidden in callsite stacktrace
+2022-02-27 11:59:47.1969 Debug Auto loading done
+2022-02-27 11:59:47.1969 Info Message Template Auto Format enabled
+2022-02-27 11:59:47.2246 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:59:47.2280 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-02-27 11:59:47.2280 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2022-02-27 11:59:47.2438 Trace Wrapping NLog.LayoutRenderers.LevelLayoutRenderer with NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper
+2022-02-27 11:59:47.2438 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:59:47.2438 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:59:47.2438 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:59:47.2785 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2022-02-27 11:59:47.3067 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2022-02-27 11:59:47.3262 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2022-02-27 11:59:47.3262 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:59:47.3544 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:59:47.3544 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:59:47.3544 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2022-02-27 11:59:47.3544 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:59:47.3690 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-02-27 11:59:47.3690 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-02-27 11:59:47.3832 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt'
+2022-02-27 11:59:47.4089 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:59:47.4089 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-02-27 11:59:47.4089 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-02-27 11:59:47.4089 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:59:47.4147 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-02-27 11:59:47.4147 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2022-02-27 11:59:47.4147 Trace Wrapping NLog.LayoutRenderers.LevelLayoutRenderer with NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper
+2022-02-27 11:59:47.4147 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:59:47.4147 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:59:47.4147 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:59:47.4147 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2022-02-27 11:59:47.4147 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2022-02-27 11:59:47.4147 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2022-02-27 11:59:47.4147 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:59:47.4147 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:59:47.4147 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:59:47.4147 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-02-27 11:59:47.4147 Info Adding target FileTarget(Name=logfile)
+2022-02-27 11:59:47.4147 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-02-27 11:59:47.4147 Trace ParseRulesElement
+2022-02-27 11:59:47.4514 Debug Watching path 'C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API' filter 'nlog.config' for changes.
+2022-02-27 11:59:47.4621 Debug --- NLog configuration dump ---
+2022-02-27 11:59:47.4621 Debug Targets:
+2022-02-27 11:59:47.4621 Debug File Target[logfile]
+2022-02-27 11:59:47.4621 Debug Rules:
+2022-02-27 11:59:47.4621 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]
+2022-02-27 11:59:47.4621 Debug --- End of NLog configuration dump ---
+2022-02-27 11:59:47.4621 Trace FindReachableObject<System.Object>:
+2022-02-27 11:59:47.4621 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]'
+2022-02-27 11:59:47.4776 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-02-27 11:59:47.4776 Trace  Scanning FileTarget 'File Target[logfile]'
+2022-02-27 11:59:47.4776 Trace   Scanning Property FileName ''C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt'' NLog.Layouts
+2022-02-27 11:59:47.4776 Trace   Scanning SimpleLayout ''C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt''
+2022-02-27 11:59:47.4776 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:59:47.4776 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:59:47.4935 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-02-27 11:59:47.4935 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:59:47.4935 Trace   Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2022-02-27 11:59:47.4935 Trace   Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2022-02-27 11:59:47.4935 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:59:47.4935 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-02-27 11:59:47.5127 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:59:47.5127 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2022-02-27 11:59:47.5322 Trace     Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2022-02-27 11:59:47.5322 Trace     Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2022-02-27 11:59:47.5322 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:59:47.5399 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:59:47.5399 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:59:47.5399 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-02-27 11:59:47.5399 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-02-27 11:59:47.5399 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-02-27 11:59:47.5399 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-02-27 11:59:47.5399 Info Validating config: TargetNames=logfile, ConfigItems=14, FilePath=C:\Users\gulsh\source\repos\PaymentGateway\PaymentGateway.API/nlog.config
+2022-02-27 11:59:47.5698 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-02-27 11:59:47.5760 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-02-27 11:59:47.5760 Trace Initializing Layout Renderer: ${message}
+2022-02-27 11:59:47.5760 Trace Initializing Layout Renderer: ${literal}
+2022-02-27 11:59:47.5760 Trace Initializing Layout Renderer: ${level}
+2022-02-27 11:59:47.6088 Trace Initializing SimpleLayout=Layout Renderer: ${level}
+2022-02-27 11:59:47.6088 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:59:47.6088 Trace Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2022-02-27 11:59:47.6088 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:59:47.6088 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:59:47.6174 Trace Initializing Layout Renderer: ${uppercase}
+2022-02-27 11:59:47.6174 Trace Initializing Layout Renderer: ${literal}
+2022-02-27 11:59:47.6174 Trace Initializing Layout Renderer: ${longdate}
+2022-02-27 11:59:47.6174 Trace Initializing '${longdate} ${level:uppercase=true} ${message}'
+2022-02-27 11:59:47.6174 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:59:47.6174 Trace Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2022-02-27 11:59:47.6174 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:59:47.6174 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-02-27 11:59:47.6174 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:59:47.6174 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2022-02-27 11:59:47.6174 Trace   Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2022-02-27 11:59:47.6174 Trace   Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2022-02-27 11:59:47.6174 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:59:47.6174 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-02-27 11:59:47.6174 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:59:47.6174 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-02-27 11:59:47.6174 Trace Initializing Layout Renderer: ${literal}
+2022-02-27 11:59:47.6174 Trace Initializing Layout Renderer: ${shortdate}
+2022-02-27 11:59:47.6174 Trace Initializing Layout Renderer: ${literal}
+2022-02-27 11:59:47.6174 Trace Initializing 'C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt'
+2022-02-27 11:59:47.6174 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-02-27 11:59:47.6174 Trace Scanning SimpleLayout ''C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt''
+2022-02-27 11:59:47.6174 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-02-27 11:59:47.6174 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:59:47.6174 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-02-27 11:59:47.6174 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-02-27 11:59:47.6174 Trace Initializing File Target[logfile]
+2022-02-27 11:59:47.6174 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-02-27 11:59:47.6174 Trace Scanning FileTarget 'File Target[logfile]'
+2022-02-27 11:59:47.6174 Trace  Scanning Property FileName ''C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt'' NLog.Layouts
+2022-02-27 11:59:47.6174 Trace  Scanning SimpleLayout ''C:\Users\gulsh\source\repos\PaymentGateway\logs\${shortdate}_logfile.txt''
+2022-02-27 11:59:47.6174 Trace  Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2022-02-27 11:59:47.6334 Trace  Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2022-02-27 11:59:47.6334 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-02-27 11:59:47.6334 Trace File Target[logfile] has 2 layouts
+2022-02-27 11:59:47.6334 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
+2022-02-27 12:00:06.3040 Debug Targets for PaymentGateway.Logging.LoggerService by level:
+2022-02-27 12:00:06.3102 Debug Trace =>
+2022-02-27 12:00:06.3102 Debug Debug => logfile
+2022-02-27 12:00:06.3102 Debug Info => logfile
+2022-02-27 12:00:06.3102 Debug Warn => logfile
+2022-02-27 12:00:06.3102 Debug Error => logfile
+2022-02-27 12:00:06.3102 Debug Fatal => logfile
+2022-02-27 12:00:06.3363 Debug FileTarget(Name=logfile): Preparing for new file 'C:\Users\gulsh\source\repos\PaymentGateway\logs\2022-02-27_logfile.txt'
+2022-02-27 12:00:06.3519 Debug Creating file appender: C:\Users\gulsh\source\repos\PaymentGateway\logs\2022-02-27_logfile.txt
+2022-02-27 12:00:06.3519 Trace Opening C:\Users\gulsh\source\repos\PaymentGateway\logs\2022-02-27_logfile.txt with allowFileSharedWriting=False
+2022-02-27 12:00:07.0456 Trace Opening C:\Users\gulsh\source\repos\PaymentGateway\logs\2022-02-27_logfile.txt with allowFileSharedWriting=False
+2022-02-27 12:00:07.1944 Trace Opening C:\Users\gulsh\source\repos\PaymentGateway\logs\2022-02-27_logfile.txt with allowFileSharedWriting=False

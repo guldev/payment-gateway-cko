@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PaymentGateway.Core\PaymentGateway.Core.csproj" />
+    <ProjectReference Include="..\PaymentGateway.Data\PaymentGateway.Data.csproj" />
+    <ProjectReference Include="..\PaymentGateway.Logging\PaymentGateway.Logging.csproj" />
+  </ItemGroup>
+
+</Project>
