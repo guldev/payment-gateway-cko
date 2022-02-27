@@ -34,7 +34,9 @@ namespace PaymentGateway.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddAuthentication(opt => {
+            #region Authentication
+            services.AddAuthentication(opt =>
+            {
                 opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                 opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
             })
@@ -51,9 +53,12 @@ namespace PaymentGateway.API
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("cko-gateway-key@345"))
                 };
             });
+            #endregion
 
+            #region DB Context
             services.AddDbContext<GatewayContext>(options =>
-             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            #endregion
 
             #region Settings
 
