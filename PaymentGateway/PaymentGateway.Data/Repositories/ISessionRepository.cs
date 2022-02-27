@@ -11,5 +11,6 @@ namespace PaymentGateway.Data.Repositories
     {
         public Task<Session> CreateSession(int merchantId, string reference, string currency);
         Task<Session> GetByID(int sessionID);
+        Task<Session> GetByReference(string reference);
     }
 }

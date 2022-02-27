@@ -38,6 +38,9 @@ namespace PaymentGateway.Core.Constants
         //Invalid currency
         public static readonly string INVALID_CURRENCY = "INVALID_CURRENCY";
 
+        //Payment Session with provided reference already exists
+        public static readonly string SESSION_REF_EXISTS = "SESSION_REF_EXISTS";
+
         #endregion
 
         #region Credit Card Validation Error Codes

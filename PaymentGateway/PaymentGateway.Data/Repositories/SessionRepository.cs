@@ -42,5 +42,12 @@ namespace PaymentGateway.Data.Repositories
 
             return session;
         }
+
+        public async Task<Session> GetByReference(string reference)
+        {
+            var session = await _gatewayContext.Sessions.FirstOrDefaultAsync(x => x.Reference == reference);
+
+            return session;
+        }
     }
 }

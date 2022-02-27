@@ -23,6 +23,12 @@ namespace PaymentGateway.Services
 
         public async Task<CreateSessionResponseModel> Create(CreateSessionRequestModel request)
         {
+            //Check if session with provided reference already exists
+            var sessionWithReference = await _sessionRepository.GetByReference(request.Reference);
+
+            if (sessionWithReference != null)
+                throw new BaseException(GatewayResponseCode.SESSION_REF_EXISTS, HttpStatusCode.BadRequest);
+
             var merchant = await _merchantRepository.GetByID(request.MerchantId);
 
             var session = await _sessionRepository.CreateSession(request.MerchantId, request.Reference, request.Currency);
