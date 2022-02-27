@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PaymentGateway.API.Services;
 using PaymentGateway.Core.Models;
 using PaymentGateway.Logging;
 using PaymentGateway.Services.Authentication;
@@ -15,11 +16,16 @@ namespace PaymentGateway.API.Controllers
     {
         private readonly IAuthenticationService _authenticationService;
         private readonly ILoggerService _loggerService;
+        private readonly ITokenService _tokenService;
 
-        public AuthenticateController(IAuthenticationService authenticationService, ILoggerService loggerService)
+        public AuthenticateController
+            (IAuthenticationService authenticationService, 
+            ILoggerService loggerService, 
+            ITokenService tokenService)
         {
             _authenticationService = authenticationService;
             _loggerService = loggerService;
+            _tokenService = tokenService;
         }
 
         [HttpPost]
@@ -32,7 +38,13 @@ namespace PaymentGateway.API.Controllers
             if(response == null)
                 _loggerService.LogInfo($"Authentication failure for merchantID {request.MerchantId}");
             else
+            {
                 _loggerService.LogInfo($"Authentication success for merchantID {request.MerchantId}");
+                _loggerService.LogInfo($"Creating access token for merchantID {request.MerchantId}");
+                
+                string accessToken = _tokenService.CreateAccessToken();
+                response.Token = accessToken;
+            }
 
             return Ok(response);
         }

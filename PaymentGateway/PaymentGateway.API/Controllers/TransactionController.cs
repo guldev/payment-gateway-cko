@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PaymentGateway.Core.Constants;
 using PaymentGateway.Core.Models;
@@ -14,6 +15,7 @@ namespace PaymentGateway.API.Controllers
 {
     [ApiController]
     [Route("api/transaction")]
+    [Authorize]
     public class TransactionController : Controller
     {
         private readonly ILoggerService _loggerService;
